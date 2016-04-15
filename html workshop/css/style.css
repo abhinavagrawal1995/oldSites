@@ -1,0 +1,150 @@
+body {
+	background-color:#EEEEEE;
+	color: black;
+	font-family: "Segoe UI", sans-serif, Tahoma,Helvetica;
+	overflow-x: hidden;
+}
+.pullright{
+	float:right;
+}
+.pulleft{
+	float:left;
+}
+.clearfix{
+	clear:both;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+	}
+header {
+	
+	width:100%;
+	height:50px;
+	background-color:white;
+	box-shadow: 0 1px 1px -1px #000000;
+	display:block;
+	margin-bottom:3px;
+	clear:both;
+}
+
+header img{
+	margin:3px 0 3px 50px;
+}
+header ul {
+	float:right;
+	margin-right:200px;
+	height:100%;
+	}
+header ul li {
+	position:relative;
+	list-style: none;
+	display: inline-block;
+	height:100%;
+	padding:10px 10px 0 10px;
+}
+header ul li a:hover:before{
+	content: "";
+	position:absolute;
+	width:0;
+	height:0;
+	border:20px solid;
+	border-color:transparent transparent #00a097 transparent;
+	box-shadow: inset 0 0 10px 2px black;
+	}
+.bxslider{
+	
+}
+#container{
+	width:100%;
+	margin: auto;
+	
+}
+#content{
+	margin: 4px auto;
+	background-color:#FFFFFF;
+}/* description individual styling */
+#desc{
+	box-shadow: 0 1px 1px -1px #000000;
+	background-color:#EEEEEE;
+	padding:1.2em 0 2em 6em;
+	margin-bottom:2em;
+}
+#desc .summary{
+	width:250px;
+	height:auto;
+	margin-right:50px;
+	
+}
+#desc img {
+	background-color:white;
+	box-shadow:0 0 3px #BBBBBB;
+	border-radius:3px;
+	padding:4px;
+	width:100px;
+	height:auto;
+	margin:5px;
+	
+}
+#desc p{
+	color:#00A097;
+	line-height:1.2em;
+	font-size:1.1em;
+	text-align:right;
+	padding:5px 10px 5px 0 ;
+	border-right:3px solid #BBBBBB;
+	height:100px;
+}
+#apps{
+	width:80%;
+	margin:auto;
+}
+#apps h1{
+	color:black;
+	font-size:2.5em;
+}
+#apps {
+  background: #eee;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+/* THE BOXES CSS */
+#apps article{
+	background:#FFFFFF;
+	width:45%;
+	border-radius:3px;
+	box-shadow:0 0 2px -2px #000000;
+	border:1px solid #00A097;
+	margin:1em;
+}
+.caption {
+	display:block;
+	color:white;
+	background:#00A097;
+	text-transform: uppercase;
+}
+footer{
+	height:200px;
+	width:100%;
+	background:url('../images/footer.png') repeat #111111;
+}
+footer ul {
+	width:80%;
+	margin:auto;
+	padding-top:5px;
+	color:#00A097;
+	}
+footer ul li {
+	display:inline;
+	float:left;
+	padding:5px 5em 5px 5em;
+	list-style:none;
+}
+.social a{
+margin:5px;
+display:inline-block;	
+min-width: 32px;
+min-height: 32px;	
+}

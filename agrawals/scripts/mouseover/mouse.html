@@ -1,0 +1,24 @@
+
+<html>
+<head>
+<script language="JavaScript">
+//
+// Rollover
+//
+function Hilite(name,over)
+{
+if(window.document.images) 
+{
+if (over)
+window.document.images[name].src = "graphics/" + name + "_ov.jpg";
+else
+window.document.images[name].src = "graphics/" + name + ".jpg";
+}
+}
+</script> 
+
+</head>
+<body>
+<img name="a.jpj" src="a.jpg" border="0" onMouseOver="Hilite('about',true)" onMouseOut="Hilite('about',false)">
+</body
+</html>

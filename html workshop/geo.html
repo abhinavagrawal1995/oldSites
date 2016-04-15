@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Cookbook|app</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-latest.min.js"></script>
+        <script src="js/custom.js"> </script> 
+        
+    </head>
+    <body>
+       <header>
+       	<img src="images/logo.png" alt="cookbook" />
+       	<ul>
+       		<li><a href="#">Home</a></li>
+       		<li><a href="#">About</a></li>
+       		<li><a href="#">Apps</a></li>
+       	</ul>
+       </header>
+       <div id="container">
+       	<section id="topimg">
+       		<figure>
+       			<img src="images/gmap.jpg" alt="Deatials"/>
+       		</figure>
+       		<figcaption>
+       			<h1>GEOLOCATION</h1>
+       			<p> THE CAPTION OF THE IMAGE </p>
+       		</figcaption>
+       		<div class="clearfix"></div>
+       	</section>
+       		<div id="content"> 
+       			<section id="app">
+       				Click the allow button to let the browser find your location.
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <article>
+
+    </article>
+<script>
+function success(position) {
+  var mapcanvas = document.createElement('div');
+  mapcanvas.id = 'mapcontainer';
+  mapcanvas.style.height = '400px';
+  mapcanvas.style.width = '600px';
+
+  document.querySelector('article').appendChild(mapcanvas);
+
+  var coords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  
+  var options = {
+    zoom: 15,
+    center: coords,
+    mapTypeControl: false,
+    navigationControlOptions: {
+    	style: google.maps.NavigationControlStyle.SMALL
+    },
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("mapcontainer"), options);
+
+  var marker = new google.maps.Marker({
+      position: coords,
+      map: map,
+      title:"You are here!"
+  });
+}
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success);
+} else {
+  error('Geo Location is not supported');
+}
+
+</script>
+       			</section>
+       		</div>
+       	</div>
+      
+
+
+	<footer><!--footer starts here -->
+    	<ul>
+    		<li><p> CONTACT US</p>
+    			<form id="contact">
+    				<input type="text" placeholder="Enter name"/><br />
+    				<input type="email" placeholder="Enter email"/><br />
+    				<textarea name="details" rows="4" cols="30" placeholder="ENTER DETAILS HERE "></textarea/>
+    			</form>
+    		</li>
+    		<li><p>THE TEAM
+    			<br/>Name 1
+    			<br/>Name 2
+    			<br/>Name 3
+    			</p>
+    			
+    		</li>
+    		<li class="social"><a href="#"></a>
+    			<a href="#"><img src="images/twitter.png" /></a>
+    			<a href="#"><img src="images/fb.png" /></a>
+    			<a href="#"><img src="images/g.png" /></a>
+    			<a href="#"><img src="images/in.png" /></a>
+    		</li>
+    		<div class="clearfix"></div>
+    	</ul>
+    </footer>
+    </body>
+</html>

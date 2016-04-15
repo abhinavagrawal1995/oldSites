@@ -1,0 +1,175 @@
+http://www.w3schools.com/JS/default.asp
+
+1)WELCOME
+<html>
+<head>
+<script type="text/javascript">
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=");
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 ;
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end));
+    } 
+  }
+return ""
+}
+
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate()+expiredays);
+document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : "; expires="+exdate.toUTCString());
+}
+
+function checkCookie()
+{
+username=getCookie('username');
+if (username!=null && username!="")
+  {
+  alert('Welcome again '+username+'!');
+  }
+else 
+  {
+  username=prompt('Please enter your name:',"");
+  if (username!=null && username!="")
+    {
+    setCookie('username',username,365);
+    }
+  }
+}
+</script>
+</head>
+<body onLoad="checkCookie()">
+</body>
+</html>
+
+
+2)CHANGE COLOR
+<html>
+<head>
+<script type="text/javascript">
+function mouseOver()
+{
+document.getElementById("b1").src ="b_blue.gif";
+}
+function mouseOut()
+{
+document.getElementById("b1").src ="b_pink.gif";
+}
+</script>
+</head>
+
+3)TIME
+<html>
+<head>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+</html>
+
+4)CURSOR ANIMATIONS
+<script language="JavaScript">
+
+//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+//Script featured on Dynamic Drive
+//Visit http://www.dynamicdrive.com for this script and more
+
+colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+n = 10;
+y = 0;
+x = 0;
+n6=(document.getElementById&&!document.all);
+ns=(document.layers);
+ie=(document.all);
+d=(ns||ie)?'document.':'document.getElementById("';
+a=(ns||n6)?'':'all.';
+n6r=(n6)?'")':'';
+s=(ns)?'':'.style';
+if (ns){
+for (i = 0; i < n; i++)
+document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+}
+if (ie)
+document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+if (ie||n6){
+for (i = 0; i < n; i++)
+document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+}
+if (ie)
+document.write('</div></div>');
+(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt){
+y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+x = (ns||n6)?evnt.pageX+1:event.x+1;
+}
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+function animate(){
+o=(ns||n6)?window.pageYOffset:0;
+if (ie)con.style.top=document.body.scrollTop;
+for (i = 0; i < n; i++){
+var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+randcolours = colours[Math.floor(Math.random()*colours.length)];
+(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+if (i < n-1){
+ var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+ temp1.top = parseInt(temp2.top);
+ temp1.left = parseInt(temp2.left);
+ } 
+else{
+ temp1.top = y+o;
+ temp1.left = x;
+ }
+}
+setTimeout("animate()",10);
+}
+animate();
+// -->
+</script>
+
+
+
+5)BALLS
+irections
+
+Step 1: Insert the below code into the HEAD section of your page:
+
+<script language="JavaScript" src="dynlib.js"></script>
+<script language="JavaScript" src="bouncingimages.js"></script>
+As you can see, the code accesses two .js files. Download them here: dynlib.js and bouncingimages.js (right click, and select "Save As").
+
+Step 2: Inside the <BODY> tag, add the following onLoad event handler:
+
+<body onLoad="javascript:loadBouncingImages();">
+http://www.dynamicdrive.com/dynamicindex4/bounceimage.htm

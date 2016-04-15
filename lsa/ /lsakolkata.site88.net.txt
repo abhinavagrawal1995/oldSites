@@ -1,0 +1,12 @@
+a2380814
+lsakolkata123
+Disk Usage	0.02 / 1500.0 MB
+Bandwidth	100000 MB (100GB)
+Home Root	/home/a2380814
+Server Name	server9.000webhost.com
+IP Address	31.170.160.73
+Apache ver.	2.2.19 (Unix)
+PHP version	5.2.*
+MySQL ver.	5.1
+Activated On	2012-11-01 12:03
+Status	 Active

@@ -1,0 +1,136 @@
+
+<html>
+<body><script>
+A=document.getElementById
+B=document.all;
+C=document.layers;
+T1=new Array("trail1.gif",38,35,"trail2.gif",30,31,"trail3.gif",28,26,"trail4.gif",22,21,"trail5.gif",16,16,"trail6.gif",10,10)
+ 
+var offsetx=15 //x offset of trail from mouse pointer
+var offsety=10 //y offset of trail from mouse pointer
+ 
+nos=parseInt(T1.length/3)
+rate=50
+ie5fix1=0;
+ie5fix2=0;
+rightedge=B? document.body.clientWidth-T1[1] : window.innerWidth-T1[1]-20
+bottomedge=B? document.body.scrollTop+document.body.clientHeight-T1[2] : window.pageYOffset+window.innerHeight-T1[2]
+ 
+for (i=0;i<nos;i++){
+createContainer("CUR"+i,i*10,i*10,i*3+1,i*3+2,"","<img src='"+T1[i*3]+"' width="+T1[(i*3+1)]+" height="+T1[(i*3+2)]+" border=0>")
+}
+ 
+function createContainer(N,Xp,Yp,W,H,At,HT,Op,St){
+with (document){
+write((!A && !B) ? "<layer id='"+N+"' left="+Xp+" top="+Yp+" width="+W+" height="+H : "<div id='"+N+"'"+" style='position:absolute;left:"+Xp+"; top:"+Yp+"; width:"+W+"; height:"+H+"; ");
+if(St){
+if (C)
+write(" style='");
+write(St+";' ")
+}
+else write((A || B)?"'":"");
+write((At)? At+">" : ">");
+write((HT) ? HT : "");
+if (!Op)
+closeContainer(N)
+}
+}
+ 
+function closeContainer(){
+document.write((A || B)?"</div>":"</layer>")
+}
+ 
+function getXpos(N){
+if (A)
+return parseInt(document.getElementById(N).style.left)
+else if (B)
+return parseInt(B[N].style.left)
+else
+return C[N].left
+}
+ 
+function getYpos(N){
+if (A)
+return parseInt(document.getElementById(N).style.top)
+else if (B)
+return parseInt(B[N].style.top)
+else
+return C[N].top
+}
+ 
+function moveContainer(N,DX,DY){
+c=(A)? document.getElementById(N).style : (B)? B[N].style : (C)? C[N] : "";
+if (!B){
+rightedge=window.innerWidth-T1[1]-20
+bottomedge=window.pageYOffset+window.innerHeight-T1[2]
+}
+c.left=Math.min(rightedge, DX+offsetx);
+c.top=Math.min(bottomedge, DY+offsety);
+}
+function cycle(){
+//if (IE5) 
+if (document.all&&window.print){
+ie5fix1=document.body.scrollLeft;
+ie5fix2=document.body.scrollTop;
+}
+for (i=0;i<(nos-1);i++){
+moveContainer("CUR"+i,getXpos("CUR"+(i+1)),getYpos("CUR"+(i+1)))
+}
+}
+ 
+function newPos(e){
+moveContainer("CUR"+(nos-1),(B)?event.clientX+ie5fix1:e.pageX+2,(B)?event.clientY+ie5fix2:e.pageY+2)
+}
+ 
+function getedgesIE(){
+rightedge=document.body.clientWidth-T1[1]
+bottomedge=document.body.scrollHeight-T1[2]
+}
+ 
+if (B){
+window.onload=getedgesIE
+window.onresize=getedgesIE
+}
+ 
+if(document.layers)
+document.captureEvents(Event.MOUSEMOVE)
+document.onmousemove=newPos
+setInterval("cycle()",rate)
+</script>
+
+
+<style type="text/css">
+
+#supertext {
+position:absolute;
+left:0;
+top:0;
+visibility:hide;
+visibility:hidden;
+
+}
+
+</style>
+
+
+
+
+<title> CONTACT US 'n' ACKNOWLEDGEMENT</title>
+<body background="homebg.jpg">
+<p align="center"><b><font face="Comic Sans ms"><font COLOR="RED" size - "32pt"><u> CONTACT US</u></p></font>
+
+
+<b><fontface="COMIC SANS MS" color="white" size="28pt"> <p align="center"> ADDRESS : 12B Alipore Road, Kolkata-700027<br><br>
+CONTACT NUMBER : 92302 17434 <BR>(The Managing Director)
+<br><br>
+EMAIL ADDRESS : singhaniatravels @ lsakolkata.com
+<BR><BR>
+</font>
+<BR>
+<p align="center"><b><font face="Matura MT Script Capitals"><font COLOR="RED" size - "32pt"><u> ACKNOWLEDGEMENT</u></p></font>
+<font face="Comic Sans ms" color="#6699FF" size ="4">
+We the developers of this website would like to take this oppurtunity to thank youtube.com for providing us with the videos. Google as usual  provided us  useful information and pictures. Our computer teacher (Maam S.Dutta) for being with us and supporting us all the way till we made this. Also all the teachers who  allowed us to work on this project during the classes. Thankyou Milaap 2010 for providing us an oppurtunity to display  our creativity.THANK YOU once again to all who helped sus.</font>
+<br><br><center>
+<img src="thanks.jpg" ><br>
+</body>
+</HTML>

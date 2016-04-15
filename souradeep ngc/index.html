@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>Muertos los Coruptos</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" language="javascript" src="jquery.js">
+        </script>
+        <script type="text/javascript" src="js/easySlider1.7.js">
+        </script>
+        <script type="text/javascript" src="jquery.viewport.js">
+        </script>
+        
+        
+        <script type="text/javascript">
+            
+            $(document).ready(function(){
+                $('.selected').show();
+                $("#firstpane p.menu_head").click(function(){
+                    $(this).next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+                    
+                });
+                
+                
+                
+            });
+        </script>
+        <script type="text/javascript" charset="utf-8">
+            $(function(){
+            
+                $(window).bind("scroll", function(event){
+                    var id;
+                    
+                    id = $(".visible:in-viewport").attr("id");
+                    /*$(".visible:in-viewport").each(function() {
+                     id=$(this).attr("id");
+                     
+                     });
+                     */
+                    window.setTimeout(function(){
+                        switch (id) {
+                            case "1":
+                                $("#nav").css({
+                                    left: '30px',
+                                    top: '8px'
+                                });
+                                break;
+                            case "2":
+                                $("#nav").css({
+                                    left: '1660px',
+                                    top: '8px'
+                                });
+                                break;
+                            case "3":
+                                $("#nav").css({
+                                    left: '3298px',
+                                    top: '8px'
+                                });
+                                break;
+                            case "4":
+                                $("#nav").css({
+                                    left: '4700px',
+                                    top: '8px'
+                                
+                                });
+                                break;
+                        }
+                    }, 400);
+                    
+                });
+            });
+        </script>
+    
+
+
+
+
+
+</head>
+    <body>
+
+
+
+<div id="main">
+            <div id="block1">
+                <div id="nav">
+                    <img src="logo_small.png" /><script>
+                        
+                        $(document).ready(function(){
+                            $("#navlinks a").click(function(event){
+                            
+                                event.preventDefault();
+                                $('html,body').animate({
+                                    scrollLeft: $($(this).attr('href')).offset().left
+                                }, 800);
+                            })
+                        });
+                    </script>
+                    <span class="visible"><center><img src='name.png'></center></span>
+                    <ul id="navlinks">
+                        <li>
+                            <a href="#main" id="homelink">Home</a>
+                      </li>
+                        
+                        <li>
+                            <a href="#portfolio" id="aboutlink">Events</a></li>
+                       
+                      <li>
+                            <a href="#about" id="homelink">Gallery</a></li>
+                             <li>
+                            <a href="#contact" id="contactlink">Contact</a></li>
+
+                            <li class="last">
+                             <a href="FAQ.html" >FAQ</a></li>
+                        </li>
+                  </ul>
+					
+              </div>
+                <div id="content">
+                    <h2 class="visible" id="1">Who are we?</h2>
+<p class="width_200">
+          We, at Muertos los Coruptos understand the need for an international organisation to combat corruption. Corruption is an evil which will continue to dread on society until and unless we, ourselves take action and realize this grave mistake of ours. Therefore, we at Muertos los Coruptos have taken this initiative to kill corruption. We therefore need your help, to accomplish this target of ours.
+                 <br><br>   <img src="download.jpg">
+                  <h2><!--<img src="logo_tiny.jpg" id="logo"/>-->                </h2>
+                </div>
+                <div id="accordion">
+                    <div id="firstpane" class="menu_list">
+                        <!--Code for menu starts here-->
+                        <p class="menu_head industry">
+                            Who are we?</p></a>
+                        <div class="menu_body selected">
+                          <a href="#about" id="aboutlink2"><img src="images/whatwedo.jpg" /></a>
+                            <div class="desc">
+                               <br> <br><center> Lets fight against CORRUPTION!!</center>
+                            </div>
+                        </div>
+                        <p class="menu_head stores ">News Updates</p>
+                        <div class="menu_body">
+                            <a href="#portfolio" id="aboutlink"><img src="images/news.jpg" /></a>
+                            <div class="desc">
+                                We get you the latest news about corruption in the black world!!
+                            </div>
+                        </div>
+                        <p class="menu_head schools">
+                            Get Involved</p>
+                        <div class="menu_body">
+                            <img src="images/getinvolved.jpg" />
+                            <div class="desc">
+                            
+                                SPREAD THE WORD!! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                <a href="www.facebook.com/elcorrupto"> <img src="images/fb.jpg" > </a> &nbsp;
+                                <a href="www.twitter.com/elcorrupto"> <img src="images/twitter.jpg"> </a> 
+                          </div>
+                        </div>
+                        <p class="menu_head others">
+                            Donate</p>
+                        <div class="menu_body">
+                            <img src="images/donate.jpg" />
+                            <div class="desc">
+                               Your donations are vital to pay for our fight against CORRUPTION. You can donate by: <br> <br>
+
+•Credit Card  &nbsp;
+•Paypal &nbsp;
+•Cheque  &nbsp;
+•Bank Transfer
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!--accordion end-->
+            </div>
+            <!--block1 end-->
+            <div id="contact">
+                <script>
+                    $(document).ready(function(){
+                        $("#submit").click(function(event){
+                            event.preventDefault();
+                            
+                            $(".error").hide();
+                            var hasError = false;
+                            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                            
+                            var emailFromVal = $("#email").val();
+                            if (emailFromVal == '') {
+                                $("#email").after('<span class="error">You forgot to enter your email address.</span>');
+                                hasError = true;
+                            }
+                            else 
+                                if (!emailReg.test(emailFromVal)) {
+                                    $("#email").after('<span class="error">Enter a valid email address.</span>');
+                                    hasError = true;
+                                }
+                            
+                            var nameVal = $("#name").val();
+                            if (nameVal == '') {
+                                $("#name").after('<span class="error">You forgot to enter your name.</span>');
+                                hasError = true;
+                            }
+                            
+                            var messageVal = $("#message").val();
+                            if (messageVal == '') {
+                                $("#message").after('<span class="error">You forgot to enter your message.</span>');
+                                hasError = true;
+                            }
+                            
+                            var captchaText = $("#captcha").val();
+                            if (captchaText == "4" || captchaText == "four" || parseInt(captchaText) == 4) {
+                                //hasError=false;
+                            }
+                            else {
+                                $("#captcha").after('<span class="error">Really? You didn\'t know that?</span>');
+                                hasError = true;
+                            }
+                            
+                            var typeVal = $('#type').val();
+                            
+                            if (hasError == false) {
+                                $(this).hide();
+                                $("#contactForm").append('<p>Your message is being sent. Please wait.</p>');
+                                
+                                $.post("message.html", {
+                                    emailFrom: emailFromVal,
+                                    name: nameVal,
+                                    message: messageVal,
+                                    type: typeVal
+                                }, function(response){
+                                    if (response) {
+                                        $("#contactForm").hide("normal").before('<h1>Success</h1><p>Your email was sent.</p>');
+                                    }
+                                });
+                            }
+                            
+                            return false;
+                        });
+                    });
+                </script>
+                <img src="box.png" width=730 height=544/>
+                <div id="contact_text">
+                    <div id="contact_form_div">
+                        <h1 class="visible" id="2"><a name="conta" id="conta">Contact</a></h1>
+                        <form id="contactForm" action="../message.php" method="POST">
+                            <label>
+                                Name
+                            </label>
+                            <input type="text" name="name" id="name"/>
+                            <label>
+                                Email
+                            </label>
+                            <input type="text" name="email" id="email"/>
+                            <label>
+                                Type of message
+                            </label>
+                            <select id="type" name="type">
+                                <option>Feedback</option>
+                                <option>General Enquiry</option>
+                                <option>Others</option>
+                            </select>
+                            <label>
+                                Message
+                            </label>
+                            <textarea name="message" id="message">
+                            </textarea>
+                            <label>
+                                What is 2 + 2? 
+                            </label>
+                            <input type="text" id="captcha"/><input type="submit" value="Submit" name="submit" id="submit"/>
+                        </form>
+                    </div>
+                </div><!--end contact_text-->
+                <div id="contact_info">
+                    <h1>Information</h1>
+                    <p>
+                       <b> Address:</b><br> #12B, Alipore Road, Kolkata- 700027, INDIA 700027
+                    </p><br>
+                    <p>
+                        <b>Email:</b> contact@elcorrupto.org
+                    </p><br>
+                    <p>
+                        <b>Phone:</b> +91 8017090688
+                    </p>
+                   
+                </div>
+            </div>
+            <!--contact end-->
+          
+                <div id="portfolio">
+                <img src="box.png" width=1050 height=544/>
+                <div id="portfolio_text">
+                    <div>
+                        <h1 class="visible" id="3">Events                        </h1>
+                        <p class="width_245"><b>•Delhi Weekly Volunteer Meeting:</b> 26 Jan, Wednesday,2012. 9 am @Arya Public School, Behind MP state Emporium, Baba Kharak Singh Marg, Delhi (Nearest Metro Station - Rajiv Chowk).<br>
+                           <b> •Public Consultation/Awareness Program on Jan Lokpal Bill:</b> Delhi, Jan 15, 2012.
+                            Venue: ARYA SAMAJ ROAD, NEAR RAMDEV CHOWK , NARELA.  Contact: JOGINDRA DAHIYA (9891973125)<br>
+                            <b>•Public Consultation/Awareness Program on Jan Lokpal Bill Delhi:</b> Jan 20, 2012.
+                             Venue: SWARN JAYANTI PARK.INDIRAPURAM,GAZHIABAD,</p>
+                            <p class="width_245">UTTARPARDESH.  </p>
+                            <p class="width_245">Contact: RAM PRABHU (9764332186) </p>
+                            
+                        
+                        <script>
+                            
+                            $(document).ready(function(){
+                                $("#portfolio_list a").click(function(event){
+                                    event.preventDefault();
+                                    var link = $(this).attr('href').substring(1);
+                                    var element = $("#portfolio_content");
+                                    if (!(element.data(link))) {
+                                        $.get('portfolio_' + link + '.html', function(msg){
+                                        
+                                            // window.setTimeout(function(){
+                                            $('#portfolio_content').html(msg)
+                                            //  },2000);  
+                                            element.data(link, msg);
+                                            
+                                        });
+                                        
+                                    }
+                                    else 
+                                        window.setTimeout(function(){
+                                            element.html(element.data(link));
+                                        }, 1000);
+                                })
+                                
+                                $("#portfolio_content").ajaxStart(function(){
+                                    $(this).html(" ").append($("<img class='loader' src='loader.gif'></img>"));
+                                }).ajaxComplete(function(){
+                                    $(this).remove(".loader");
+                                });
+                                
+                                $("#slider ul li a").live('click', function(e){
+                                    e.preventDefault();
+                                    
+                                });
+                            });
+                        </script>
+                      
+                    </div>
+                    <!--end empty div-->
+                </div>
+                <!--end portfolio_text-->
+                <div id="portfolio_content">   <div id="accordion">
+                    <div id="firstpane" class="menu_list">
+                        <!--Code for menu starts here-->
+                        <p class="menu_head industry">
+                            Weekly Volunteer Meeting, New Delhi &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;(20th Dec, '11)</p>
+                        <div class="menu_body selected">
+                            <img src="images/1.jpg" />
+                            <div class="desc">
+                                We discussed with the volunteers of  India Against Corruption about the lastest events coming up.
+                            </div>
+                        </div>
+                        <p class="menu_head stores ">
+                            Press Conference, Press Club of India  ,Kolkata  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; (11th Dec, '11)</p>
+                        <div class="menu_body">
+                            <img src="images/2.jpg" />
+                            <div class="desc">
+                                The press conference was organized to clear the doubts about the Lokpal and cater to the FAQs.
+                            </div>
+                        </div>
+                        <p class="menu_head schools">
+                            Public Consultation/Awareness Program on Jan Lokpal Bill &nbsp; (19th Aug, '11)
+                        </p>
+                        <div class="menu_body">
+                            <img src="images/3.jpg" />
+                            <div class="desc">
+                                It was organized by different organisations in the four cities: Mumbai, Pune, Hyderabad, Kolkata.
+                            </div>
+                        </div>
+                        <p class="menu_head others">
+                            Bike Rally to India Gate, Delhi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(16th Aug, '11)</p>
+                        <div class="menu_body">
+                            <img src="images/4.jpg" />
+                            <div class="desc">
+                                Organized by the young volunteers of our anti-corruption campaign.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+                   
+            
+                <!--end portfolio_content-->
+            </div>
+            <!--end portfolio-->
+            <div id="about">
+                 <img src="box.png" width=1050 height=544/>
+				 <div id="about_text">
+
+                    <h1 class="visible" id="4">Gallery</h1>
+                   <center<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+ codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+ width="700" height="446" id="CC3572635" align="middle">
+<param name="movie" value="Party.swf"/>
+<param name="quality" value="high" />
+<param name="FlashVars" VALUE="xmlfile=Party.xml"/>
+<param name="scale" value="noscale" />
+<param name="salign" value="lt" />
+<param name="bgcolor" value="#ffffff" />
+<param name="wmode" value="transparent" />
+<embed src="Party.swf" quality="high" bgcolor="#ffffff" width="700" height="446"
+ name="CC3572635"  wmode="transparent"  scale="noscale" salign="lt" align="middle" type="application/x-shockwave-flash"
+ pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></center>
+
+                    
+
+                    
+
+                </div>
+
+            </div>
+
+                 
+                  
+                </div>
+            
+                
+
+
+            <!--end about-->
+    
+
+                </div>
+
+     
+
+        <!--main-->
+    </body>
+</html>

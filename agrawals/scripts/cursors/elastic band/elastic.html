@@ -1,0 +1,59 @@
+<html>
+<head>
+<STYLE>
+v\:* {
+ BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+ 
+<SCRIPT language="JavaScript1.2">
+
+//Elastic band trail
+//By Elastic_Ouille_script@GHindoute.net
+//Thanks to MP1515 <MP1515@aramette.net> for all Mathematical model
+//TOS for script: http://www.dynamicdrive.com/dynamicindex13/tos.txt
+//For this script and more, visit http://www.dynamicdrive.com
+
+var stringcolor="black" //SPECIFY STRING COLOR
+var ballsrc="superball.gif" //SPECIFY URL TO BALL IMAGE
+
+///No editing required below this line//////////////////////////
+
+if (document.all&&window.print){
+document.write('<IMG id=Om style="LEFT: -10px; POSITION: absolute" src="'+ballsrc+'">')
+ddx=0;ddy=0;PX=0;PY=0;xm=0;ym=0
+OmW=Om.width/2;OmH=Om.height/2
+}
+
+function Ouille(){
+ x=Math.round(PX+=(ddx+=((xm-PX-ddx)*3)/100))
+ y=Math.round(PY+=(ddy+=((ym-PY-ddy)*3-300)/100))
+ Om.style.left=x-OmW
+ Om.style.top=y-OmH
+ elastoc.to=x+","+y
+ //elastoc.strokecolor="RGB("+x+","+(2*y)+",0)"
+ elastoc.strokecolor=stringcolor
+ setTimeout("Ouille()",1)   
+}
+function momouse(){
+ xm=window.event.x+5
+ ym=window.event.y+document.body.scrollTop+15
+ elastoc.from=xm+","+ym
+}
+
+if(document.all&&window.print){
+code="<v:line id=elastoc style='LEFT:0;POSITION:absolute;TOP:0' strokeweight='1.5pt'></v:line>"} else {
+code="<v:group style='LEFT:-10;WIDTH:100pt;POSITION:absolute;TOP:0;HEIGHT:100pt' coordsize='21600,21600'><v:line id=elastoc style='LEFT:0;WIDTH:100pt;POSITION:absolute;TOP:0;HEIGHT:100pt' strokeweight='1.5pt'></v:line></v:group>"}
+
+if(document.all&&window.print){
+document.body.insertAdjacentHTML("afterBegin",code)
+document.onmousemove=momouse
+Ouille()
+}
+
+</SCRIPT>
+
+</head>
+<body>
+</body>
+</html>
