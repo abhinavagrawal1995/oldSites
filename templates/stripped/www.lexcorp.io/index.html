@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 t-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>          <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>LexCorp</title>
+
+  <!-- Metadata -->
+  <meta name="description" content="LexCorp is the world's premiere digital industrial company. LexCorp has been transforming industry through innovation in the fields of aerospace, resource exploration, defense, health and consumer solutions to build a better tomorrow, today.">
+  <meta name="keywords" content="lexcorp, lex luthor, batman vs superman, xos, os, computer, industries, alexander luthor, batman, superman, security, gotham">
+  <!-- Open Graph -->
+  <meta property="og:title" content="LexCorp">
+  <meta property="og:description" content="LexCorp is the world's premiere digital industrial company. LexCorp has been transforming industry through innovation in the fields of aerospace, resource exploration, defense, health and consumer solutions to build a better tomorrow, today.">
+  <meta property="og:url" content="http://www.lexcorp.io">
+  <meta property="og:image" content="http://www.lexcorp.io/files/images/LEXCORP_share.jpg">
+  <meta property="og:type" content="website"/>
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+  <!-- Stylesheets -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="files/css/main.min.css"/>
+
+  <!-- Javascript -->
+  <!-- Javascript -->
+  <script type="text/javascript" src="//js.maxmind.com/js/apis/geoip2/v2.1/geoip2.js"></script>
+
+  <script type="text/javascript">
+    var countryCode = '';
+
+    var onSuccess = function(location){
+
+      countryCode = location.country.iso_code;
+
+      if(window.console) {
+        try {
+          console.log("Country Code: "+countryCode);
+        } catch(e) {}
+      }
+
+      switch(countryCode) {
+        case 'US':
+          //don't do anything
+          break;
+          case 'IT':
+          window.location.href ='it';
+          break;
+          case 'FR':
+          window.location.href ='fr';
+          break;
+          case 'DE':
+          window.location.href ='de';
+          break;
+          case 'KR':
+          window.location.href ='kr';
+          break;
+          case 'GB':
+          window.location.href ='uk';
+          break;
+          case 'TW':
+          window.location.href ='tw';
+          break;
+          case 'HK':
+          window.location.href ='hk';
+          break;
+          case 'BR':
+          window.location.href ='br';
+          break;
+          case 'MX':
+          window.location.href ='la';
+          break;
+          case 'RU':
+          window.location.href ='ru';
+          break;
+          case 'AU':
+          window.location.href = 'au';
+          break;
+          case 'AR':
+          window.location.href ='ar';
+          break;
+          case 'CA':
+          window.location.href ='ca';
+          break;
+          case 'ES':
+          window.location.href ='es';
+          break;
+          default:
+          //window.location.href ='../';
+        }
+
+      };
+
+        var onError = function(error){
+          if(window.console) {
+            try {
+              console.log(
+                "Error in Connecting to GEOIP2 API:\n\n"
+                + JSON.stringify(error, undefined, 4)
+                );
+            } catch(e) {}
+          }
+        };
+
+        geoip2.country(onSuccess, onError);
+
+      </script>
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="files/js/frameworks.min.js"></script>
+      <script src="files/js/site.min.js"></script>
+      <script>
+        var module = {};
+        module.checkIn = function(){
+          clearInterval(module.preloadTimer);
+          module.minTimePassed = true;
+          if(module.imagesLoaded){
+            module.init();
+          }
+        }
+        module.preloadTimer = setInterval(module.checkIn, 3000);
+      </script>
+    </head>
+    <body>
+      <!-- Breakpoints -->
+      <div id="breakpoints"></div>
+      <h1 style="display:none">LexCorp</h1>
+      <!-- Images preloading -->
+      <div id="image-loading" style="display:none;">
+        <img src="files/images/titleAnim.png" alt="animation preload"/>
+        <img src="files/images/preloader2_orange.png" alt="preloader preload"/>
+      </div><!-- end image-loading -->
+      <!-- Preloader -->
+      <div id="page-preloader"><img alt="preloader image"/></div>
+      <script>
+        var callback = function(){
+          document.getElementById("page-preloader").style.display = "block";
+          Animator.startAnimation("Preloader", true);
+        }
+        Animator.addAnimation("Preloader", "page-preloader", "files/images/preloader2_orange.png", 100, 100, 45, false, callback);
+      </script>
+      <!-- wrapper -->
+      <div id="wrapper" class="loading">
+        <!-- Header -->
+        <div id="header">
+          
+          <div id="menu-toggle">
+              <div id="menu-toggle-icon">
+                  <div class="menu-toggle-icon-bar"></div>
+                  <div class="menu-toggle-icon-bar"></div>
+                  <div class="menu-toggle-icon-bar"></div>
+                  <div class="menu-toggle-icon-bar"></div>
+              </div><!-- end menu-toggle-icon -->
+          </div><!-- end menu-toggle -->
+          <div id="header-nav">
+            <ul>
+              <li style="display:none;"><a id="nav-button-01" class="nav-button inactive" data-page-id="home" href="#">HOME</a></li>
+              <li><a id="nav-button-02" class="nav-button inactive" data-page-id="about" href="#">ABOUT</a></li>
+              <li><a id="nav-button-03" class="nav-button inactive" data-page-id="news" href="#">NEWS</a></li>
+              <li><a id="nav-button-04" class="nav-button inactive" data-page-id="investors" href="#">INVESTORS</a></li>
+              <li><a id="nav-button-05" class="nav-button inactive" data-page-id="lex-os" href="#">LEX/OS</a></li>
+              <li><a id="nav-button-06" class="nav-button inactive" data-page-id="signup" href="#">SIGNUP</a></li>
+              <li id="nav-language"><a class='language-selector-mobile'><div class="language-selector-mobile-image"></div><div class="language-selector-mobile-label"></div></a></li>
+            </ul>
+          </div><!-- end header-nav -->
+          <div id="header-logo"><img id="header-logo-image" src="files/images/header_logo_new.png" alt="header logo"/></div>
+          <a href="https://twitter.com/alexanderluthor" target="_blank" rel="external" id="header-social-twitter" class="ui-button"><img id="header-social-twitter-image" src="files/images/twitter@2x.png" alt="twitter button image"/><img id="header-social-twitter-image-over" src="files/images/twitter-hover@2x.png" alt="twitter button image over"/></a>
+          <div class="header-line"></div>
+          <div id="language-selector-container">
+
+            <select id="language-selector">
+              <option data-img-src="files/images/flags/ar.jpg" value="ar">ARG</option><option data-img-src="files/images/flags/au.jpg" value="au">AUS</option><option data-img-src="files/images/flags/br.jpg" value="br">BRA</option><option data-img-src="files/images/flags/ca.jpg" value="ca">CAN</option><option data-img-src="files/images/flags/es.jpg" value="es">ESP</option><option data-img-src="files/images/flags/fr.jpg" value="fr">FRA</option><option data-img-src="files/images/flags/de.jpg" value="de">GER</option><option data-img-src="files/images/flags/uk.jpg" value="uk">GRB</option><option data-img-src="files/images/flags/hk.jpg" value="hk">HKG</option><option data-img-src="files/images/flags/it.jpg" value="it">ITA</option><option data-img-src="files/images/flags/kr.jpg" value="kr">KOR</option><option data-img-src="files/images/flags/la.jpg" value="la">MEX</option><option data-img-src="files/images/flags/ru.jpg" value="ru">RUS</option><option data-img-src="files/images/flags/tw.jpg" value="tw">TWN</option><option data-img-src="files/images/flags/en_us.jpg" value="en_us">USA</option>            </select>
+            <img class="globe" src="files/images/navigation_globe.png" alt="globe image"/>
+          </div>
+        </div><!-- end header -->
+        <!-- Language Mobile Overlay -->
+        <div id='languageMobileOverlay'>
+          <div class='language-overlay-content'>
+            <div class="language-flag" data-value="ar"><img src="files/images/flags/ar.jpg" /></div><div class="language-flag" data-value="au"><img src="files/images/flags/au.jpg" /></div><div class="language-flag" data-value="br"><img src="files/images/flags/br.jpg" /></div><div class="language-flag" data-value="ca"><img src="files/images/flags/ca.jpg" /></div><div class="language-flag" data-value="es"><img src="files/images/flags/es.jpg" /></div><div class="language-flag" data-value="fr"><img src="files/images/flags/fr.jpg" /></div><div class="language-flag" data-value="de"><img src="files/images/flags/de.jpg" /></div><div class="language-flag" data-value="uk"><img src="files/images/flags/uk.jpg" /></div><div class="language-flag" data-value="hk"><img src="files/images/flags/hk.jpg" /></div><div class="language-flag" data-value="it"><img src="files/images/flags/it.jpg" /></div><div class="language-flag" data-value="kr"><img src="files/images/flags/kr.jpg" /></div><div class="language-flag" data-value="la"><img src="files/images/flags/la.jpg" /></div><div class="language-flag" data-value="ru"><img src="files/images/flags/ru.jpg" /></div><div class="language-flag" data-value="tw"><img src="files/images/flags/tw.jpg" /></div><div class="language-flag" data-value="en_us"><img src="files/images/flags/en_us.jpg" /></div>            <div id="close-button">
+              <div id="close-button-icon">
+                  <div class="close-button-icon-bar"></div>
+                  <div class="close-button-icon-bar"></div>
+              </div><!-- end menu-toggle-icon -->
+          </div><!-- end close-button -->
+          </div>
+        </div>
+        <!-- End Language Mobile Overlay -->
+        <!-- Content -->
+        <div id="content">
+          <main>
+            <section id="home" class="site-section inactive-section" data-slide-title="HOME">
+              <div class="row fill">
+                <div class="twelve columns fill">
+                  <div class="section-background-container"><div id="home-page-background" class="section-background"><img src="files/images/background_home.jpg" alt="home page background"/></div></div>
+                  <div id="home-page-content" class="section-content">
+                    <div id="home-page-logo">
+                      <div id="home-page-logo-inner"><img alt="home page logo"/></div>
+                      <script>
+                        Animator.addAnimation("TitleAnimation", "home-page-logo-inner", "files/images/titleAnim.png", 958, 175, 36, false);
+                      </script>
+                    </div><!-- end home-page-logo -->
+                    <div id="home-page-slogan">
+                      <div id="home-page-slogan-inner">
+                        <div id="home-page-slogan-top" class="localizable">LET'S BUILD A BETTER TOMORROW</div>
+                        <div id="home-page-slogan-bottom" class="localizable">TODAY</div>
+                        <div id="home-page-play-button" class="localizable ui-button">WATCH VIDEO</div>
+                      </div>
+                    </div><!-- end home-page-slogan -->
+                  </div><!-- end home-page-content -->
+                </div><!-- end column -->
+              </div><!-- end row -->
+            </section><!-- end section -->
+            <section id="about" class="site-section inactive-section" data-slide-title="ABOUT">
+              <div class="row fill">
+                <div class="twelve columns fill">
+                  <div class="section-background-container">
+                    <div id="about-page-background" class="section-background">
+                      <div id="about-page-background" class="sub-section-background active" data-page-id="about-mission"><img src="files/images/background_about_mission.jpg"  alt="about page background"/></div>
+                      <div id="about-page-background" class="sub-section-background inactive" data-page-id="about-research"><img src="files/images/background_about_research.jpg"  alt="about page background"/></div>
+                    </div><!-- end section-background -->
+                    </div><!-- end section-background-container -->
+                  <div id="about-page-content" class="section-content">
+                    <div id="about-page-header" class="section-header">
+                      <h2 class="active">ABOUT US</h2>
+                      <h2 class="inactive">RESEARCH</h2>
+                      <div id="about-nav" class="sub-nav">
+                        <ul>
+                          <li><a id="about-nav-button-01" class="about-nav-button active" data-page-id="about-mission">Mission</a></li>
+                          <li><a id="about-nav-button-02" class="about-nav-button inactive" data-page-id="about-research">Research</a></li>
+                        </ul>
+                      </div><!-- end about-nav -->
+                      <div class="section-header-line"></div>
+                    </div><!-- end about-page-header -->
+                    <div id="about-page-body-mission" class="section-body active">
+                      <div class="section-module"><h3>Our Mission</h3><p>LexCorp is the world's premiere digital industrial company. LexCorp has been transforming industry through innovation in the fields of aerospace, resource exploration, defense, health and consumer solutions to build a better tomorrow, today. Our focus on software-defined machines drives us to lead the global charge in revolutionizing business for the 21st century; accelerating the word's transition to a sustainable model of global enterprise.</p></div><!-- end section-module -->
+                    </div><!-- end about-page-body -->
+                    <div id="about-page-body-research" class="section-body inactive">
+                      <div class="section-module left-aligned"><h3>Never Stop Moving Forward</h3><p>As our world gets smaller, the LexCorp research teams work 24/7 across the globe to reinvent and improve our shared human experience. From helping ideas across industry reach new heights to our ongoing efforts to cure disease, our researchers are creating new technology solutions that revolutionize every day.</p></div><!-- end section-module -->
+                    </div><!-- end about-page-body -->
+                  </div><!-- end about-page-content -->
+                </div><!-- end column -->
+              </div><!-- end row -->
+            </section><!-- end section -->
+            <section id="news" class="site-section inactive-section" data-slide-title="NEWS">
+              <div class="row fill">
+                <div class="twelve columns fill">
+                  <div class="section-background-container">
+                  <div id="news-page-background" class="section-background">
+                    <img src="files/images/background_news_01.jpg"  alt="news page background"/>
+                  </div><!-- endn section-background -->
+                </div><!-- end section-background-container -->
+                  <div id="news-page-content" class="section-content dark">
+                    <div id="news-page-header" class="section-header">
+                      <h2>NEWS</h2>
+                      <div id="news-nav" class="sub-nav">
+                        <ul>
+                          <li><a id="news-nav-button-01" class="news-nav-button poly active" data-page-id="news-01"></a></li>
+                          <li><a id="news-nav-button-02" class="news-nav-button poly inactive" data-page-id="news-02"></a></li>
+                        </ul>
+                      </div><!-- end about-nav -->
+                      <div class="section-header-line"></div>
+                    </div><!-- end news-page-header -->
+                    <div id="news-page-body-01" class="section-body active">
+                      <div class="section-module news-image news-image-desktop"><img src="files/images/news_image.jpg"/></div>
+                      <div class="section-module news-image news-image-mobile"><img src="files/images/news_image_mobile.jpg"/></div>
+                      <div class="section-module news-text">
+                        <div id="news-text-01"><p>LexCorp's CEO, Lex Luthor sat down to talk about his vision for the future and the impeding release of LexCorp's revolutionary new operating system LEX/OS.</p><p class="quote">"What I want is to leave the planet in a better shape for the next generation. To make the world and its children safer. I want it. And I bet you do too..."</p><p class="narrow">Learn more about Lex Luthor's vision in the <a href="http://www.wired.com/brandlab/2015/12/lexical-analysis-lex-luthor-on-disrupting-the-vigilante-industrial-complex/" target="_blank" rel="external">full interview from Wired</a>.</p></div>
+                        <div id="news-break" class="section-body-line"></div>
+                        <div id="news-text-02"><p>The youngest person to ever be named Fortune Magazine's Businessperson of the Year, LexCorp's CEO Lex Luthor talked with Fortune about the company's transition from a focus on resource exploration to emerging technology</p><p class="quote">"The true gift of LexCorp is our products. We are on the cusp of unveiling a technology that will change the world forever."</p><p class="narrow">The profile can be read in full over at <a href="http://fortune.com/contentfrom/2015/10/5/lex-luthor-jr/ntv_a/3dsBA58oDAfxgFA/" target="_blank" rel="external">Fortune</a>.</p></div>
+                      </div>
+                    </div><!-- end news-page-body -->
+                    <div id="news-page-body-02" class="section-body inactive">
+                      <div class="section-module news-image news-image-desktop"><img src="files/images/news_image.jpg"/></div>
+                      <div class="section-module news-image news-image-mobile"><img src="files/images/news_image_mobile.jpg"/></div>
+                      <div class="section-module news-text"><p>The youngest person to ever be named Fortune Magazine's Businessperson of the Year, LexCorp's CEO Lex Luthor talked with Fortune about the company's transition from a focus on resource exploration to emerging technology</p><p class="quote">"The true gift of LexCorp is our products. We are on the cusp of unveiling a technology that will change the world forever."</p><p class="narrow">The profile can be read in full over at <a href="http://fortune.com/contentfrom/2015/10/5/lex-luthor-jr/ntv_a/3dsBA58oDAfxgFA/" target="_blank" rel="external">Fortune</a>.</p></div>
+                    </div><!-- end news-page-body -->
+                  </div><!-- end news-page-content -->
+                </div><!-- end column -->
+              </div><!-- end row -->
+            </section><!-- end section -->
+            <section id="investors" class="site-section inactive-section" data-slide-title="INVESTORS">
+              <div class="row fill">
+                <div class="twelve columns fill">
+                  <div class="section-background-container">
+                    <div id="investors-page-background" class="section-background">
+                      <div id="investors-page-background" class="sub-section-background active" data-page-id="investors-relations"><img src="files/images/background_investors_relations.jpg"  alt="investors page background"/></div>
+                      <div id="investors-page-background" class="sub-section-background inactive" data-page-id="investors-leadership"><img src="files/images/background_investors_leadership.jpg"  alt="investors page background"/></div>
+                    </div><!-- end section-background -->
+                  </div><!-- end section-background-container -->
+                  <div id="investors-page-content" class="section-content">
+                    <div id="investors-page-header" class="section-header">
+                      <h2 class="active">INVESTOR RELATIONS</h2>
+                      <h2 class="inactive">LEADERSHIP</h2>
+                      <div id="investors-nav" class="sub-nav">
+                        <ul>
+                          <li><a id="investors-nav-button-01" class="investors-nav-button active" data-page-id="investors-relations">Investors</a></li>
+                          <li><a id="investors-nav-button-02" class="investors-nav-button inactive" data-page-id="investors-leadership">Leadership</a></li>
+                        </ul>
+                      </div><!-- end about-nav -->
+                      <div class="section-header-line"></div>
+                    </div><!-- end investors-page-header -->
+                    <div id="investors-page-body-relations" class="section-body active">
+                      <div class="section-module medium"><h3>Investor Overview</h3><p>At LexCorp, we are always striving upwards. Taking on challenges that others shy from, we are working to envision and secure our collective future. We believe our operational philosophy provides us with a competitive edge in the increasingly risk adverse global marketplace. With our sustained focus on protective consumer solutions, we will continue to deliver profitability and increase value to all of our LexCorp stakeholders.</p></div><!-- end section-module -->
+                      <div class="section-module small">
+                        <div id="stocks">
+                          <img src="files/images/modules_investors_stocks.png" alt="investors stock image"/>
+                          <h4>Stock Information</h4>
+                          <div class="section-body-line"></div>
+                          <div class="stocks-header">
+                            <div class="stocks-header-label">Stock Quote</div>
+                            <div class="stocks-header-value-big" id="stock-data-ask">000.00</div>
+                            <div class="stocks-header-value-medium" id="stock-data-change">+0.00</div>
+                            <div class="section-body-line"></div>
+                          </div><!-- end stocks-header -->
+                          <div class="stocks-body">
+                            <div class="stocks-body-module">
+                              <div class="stocks-body-label">Previous Close</div>
+                              <div class="stocks-body-value" id="stock-data-prevclose">000.00</div>
+                              <div class="section-body-line"></div>
+                            </div><!-- end stocks-body-module -->
+                            <div class="stocks-body-module">
+                              <div class="stocks-body-label">Day High</div>
+                              <div class="stocks-body-value" id="stock-data-dayhigh">000.00</div>
+                              <div class="section-body-line"></div>
+                            </div><!-- end stocks-body-module -->
+                            <div class="stocks-body-module">
+                              <div class="stocks-body-label">Open</div>
+                              <div class="stocks-body-value" id="stock-data-open">000.00</div>
+                              <div class="section-body-line"></div>
+                            </div><!-- end stocks-body-module -->
+                            <div class="stocks-body-module">
+                              <div class="stocks-body-label">Day Low</div>
+                              <div class="stocks-body-value" id="stock-data-daylow">000.00</div>
+                              <div class="section-body-line"></div>
+                            </div><!-- end stocks-body-module -->
+                            <div class="stocks-body-module">
+                              <div class="stocks-body-label">Volume</div>
+                              <div class="stocks-body-value" id="stock-data-volume">0</div>
+                              <div class="section-body-line"></div>
+                            </div><!-- end stocks-body-module -->
+                            <div class="stocks-body-module">
+                              <div class="stocks-body-label">Market Cap</div>
+                              <div class="stocks-body-value" id="stock-data-cap">0</div>
+                              <div class="section-body-line"></div>
+                            </div><!-- end stocks-body-module -->
+                            <div class="clear"></div>
+                          </div><!-- end stocks-body -->
+                        </div><!-- end stocks -->
+                      </div>
+                    </div><!-- end about-page-body -->
+                    <div id="investors-page-body-leadership" class="section-body inactive">
+                      <div class="section-module"><h3>Envisioning the world of tomorrow, today.</h3><p>Protecting our planet is just as much a business opportunity as an altruistic one. In the more than 100 years since the Industrial Revolution, productivity has excelled at the cost of sustainability. At LexCorp, we believe we can lead the global community in the development and utilization of emerging technologies to build a better tomorrow, today. In 2015, LexCorp was one of the top five most charitable corporations in America. By supporting organizations and programs that will leave our world in better shape for the next generation, we are confident that LexCorp can help to create a stable and properous global economy of the future.</p></div><!-- end section-module -->
+                    </div><!-- end about-page-body -->
+                  </div><!-- end investors-page-content -->
+                </div><!-- end column -->
+              </div><!-- end row -->
+            </section><!-- end section -->
+            <section id="lex-os" class="site-section inactive-section" data-slide-title="LEX/OS">
+              <div class="row fill">
+                <div class="twelve columns fill">
+                  <div class="section-background-container"><div id="os-page-background" class="section-background"><img src="files/images/background_os.jpg" alt="os page background"/></div></div>
+                  <div id="os-page-content" class="section-content">
+                    <div id="os-page-cta">
+                      <a id="buttons-play" href="#"></a>
+                      <div class="label">INTRO VIDEO</div>
+                    </div>
+                    <div id="os-page-logo">
+                      <img id="os-page-logo-inner" src="files/images/logo_os.png" alt="os page logo"/>
+                    </div><!-- end home-page-logo -->
+                    <div id="os-page-slogan">
+                      <div id="os-page-slogan-inner">
+                        <div id="os-page-slogan-top" class="localizable">We believe in technology that unites us. Introducing LEX/OS. The world's most private and secure operating system. We have a lot to show you.</div>
+                        <div id="os-page-slogan-bottom" class="localizable">Help make LEX/OS better.<a id="buttons-beta" href="http://www.lex-os.io" target="_blank" rel="external">BECOME A BETA TESTER</a></div>
+                      </div>
+                    </div><!-- end os-page-slogan -->
+                  </div><!-- end os-page-content -->
+                </div><!-- end column -->
+              </div><!-- end row -->
+            </section><!-- end section -->
+            <section id="signup" class="site-section inactive-section" data-slide-title="SIGNUP">
+              <div class="row fill">
+                <div class="twelve columns fill">
+                  <div class="section-background-container"><div id="signup-page-background" class="section-background"><img src="files/images/background_signup.jpg" alt="signup page background"/></div></div>
+                  <div id="signup-page-content" class="section-content">
+                    <div id="signup-page-text">
+                      <div id="signup-page-text-inner" class="localizable">SIGN UP BELOW FOR MORE INFORMATION ABOUT LEXCORP AND LEX/OS.</div><!-- end sign-up-page-inner -->
+                    </div><!-- end signup-page-text -->
+                    <div id="signup-page-form">
+                      <div id="signup-page-form-inner">
+                        <form action="#" method="POST" id="signup-form">
+                          <fieldset>
+                            <div class="form-group">
+                              <label for="email" class="localizable">EMAIL:</label>
+                              <input maxlength="32" type="text" id="email-signup" name="email" value="" tabindex="1"/>
+                              <div class="clear"></div>
+                            </div><!-- end form-group -->
+                            <div class="form-group">
+                              <label for="first-name" class="localizable">FIRST NAME:</label>
+                              <input maxlength="32" type="text" id="firstname-signup" name="first-name" value="" tabindex="2"/>
+                              <div class="clear"></div>
+                            </div><!-- end form-group -->
+                            <div class="form-group">
+                              <label for="last-name" class="localizable">LAST NAME:</label>
+                              <input maxlength="32" type="text" id="lastname-signup" name="last-name" value="" tabindex="3"/>
+                              <div class="clear"></div>
+                            </div><!-- end form-group -->
+                            <div class="form-group">
+                              <input type="checkbox" id="checkbox-signup" name="checkbox" checked tabindex="4"/>
+                              <label for="checkbox" id="checkbox-label" class="localizable"><span id="checkbox-trigger"></span>Yes, I want to receive updates and news from DC, Warner Bros. <br />and its <a href="https://www.warnerbros.co.uk/info/privacypolicy#group" target="_blank">affiliates</a>.</label>
+                              <label class="localizable legal-txt">I agree that I have read and accepted the <br /><a href="http://www.warnerbros.com/term-use" target="_blank">Terms of Use</a> and <a href="http://www.lexcorp.io/privacypolicy/" target="_blank">Privacy Policy</a>.</label>
+                              <div class="clear"></div>
+                            </div><!-- end form-group -->
+                            <input id="signup-form-submit" type='button' name='Submit' value="SIGN UP" tabindex="5" />
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div><!-- end signup-page-form -->
+                </div><!-- end signup-page-content
+              </div><!-- end column -->
+            </div><!-- end row -->
+          </section><!-- end section -->
+        </main><!-- end main -->
+        <div id="footer">
+          <div id="footer-background"></div>
+          <div id="legal">© 2016 WARNER BROS. ENT. ALL RIGHTS RESERVED. TM & © DC COMICS.</div>
+          <div id="footer-navigation">
+            <div id="footer-arrow-up" class="ui-button up-arrow">
+              <img id="footer-arrow-up-image" src="files/images/arrow-big-up@2x.png" alt="navigation up arrow"/>
+            </div>
+            <div id="footer-arrow-down" class="ui-button down-arrow">
+              <img id="footer-arrow-down-image" src="files/images/arrow-big-down@2x.png" alt="navigation down arrow"/>
+            </div>
+            <div id="footer-arrow-up-small" class="ui-button up-arrow">
+              <img id="footer-arrow-up-small-image" src="files/images/arrow-up@2x.png" alt="navigation up arrow"/>
+            </div>
+            <div id="footer-arrow-down-small" class="ui-button down-arrow">
+              <img id="footer-arrow-down-small-image" src="files/images/arrow-down@2x.png" alt="navigation down arrow"/>
+            </div>
+          </div>
+          <div id="footer-links">
+            <a id="footer-links-pp" target="_blank" href="http://www.lexcorp.io/privacypolicy/" rel="external">PRIVACY POLICY</a>
+            <a id="footer-links-pp" target="_blank" href="http://www.warnerbros.com/privacy-center-wb-privacy-policy#p5" rel="external">AD CHOICES</a>
+          </div>
+        </div><!-- end footer -->
+      </div><!-- end content -->
+    </div><!-- end wrapper -->
+    <div id="overlay-preloader" class="light">
+      <div id="overlay-preloader-animation"><img alt="preloader image"/></div>
+      <script>
+        Animator.addAnimation("Overlay-Preloader", "overlay-preloader-animation", "files/images/preloader2_white.png", 100, 100, 45, false, callback);
+      </script>
+    </div><!-- end overlay preloader -->
+    <div id="overlay-form" class="light">
+      <div id="overlay-message-container">
+        <div id="overlay-message-header">
+          <div id="overlay-message-header-logo"><img id="header-logo-image" src="files/images/header_logo.png" alt="overlay logo"/></div>
+          <div id="overlay-message-header-close" class="ui-button"><img src="files/images/overlay_close.jpg" alt="overlay close"/></div>
+        </div><!-- end overlay-message-header -->
+        <div id="overlay-message-text"></div><!-- end overlay-message-text -->
+      </div><!-- end overlay-message-container -->
+    </div><!-- end overlay form -->
+    <div id="overlay">
+      <div id="youtube-container">
+        <div id="youtbe-player">
+        </div><!-- end youtube-player -->
+      </div><!-- end youtube-container -->
+      <a href="#" id="overlay-close" class="localizable ui-button">CLOSE</a>
+    </div><!-- end trailer-overlay -->
+    <div id="rotate-overlay">
+      <div class="row fill">
+        <div class="twelve columns fill">
+          <div class="section-background-container"><div id="rotate-page-background" class="section-background"><img src="files/images/background_rotate.jpg" alt="rotate page background"/></div></div>
+          <div id="rotate-page-content" class="section-content">
+            <div id="rotate-page-icon"><img src="files/images/rotate_image.png" alt="image to rotate device"/></div>
+            <div id="rotate-page-text">
+              <div id="rotate-message">PLEASE ROTATE YOUR DEVICE.</div>
+            </div><!-- end home-page-slogan -->
+          </div><!-- end home-page-content -->
+        </div><!-- end column -->
+      </div><!-- end row -->
+    </div>
+
+    <script>
+      EmailForm.setErrorMessage("firstname-signup", "Please enter your first name");
+      EmailForm.setErrorMessage("lastname-signup", "Please enter your last name");
+      EmailForm.setErrorMessage("email-signup", "Please enter a valid email");
+
+      EmailForm.setResponseMessage("success", "THANK YOU FOR SIGNING UP!","WE WILL SEND YOU THE LATEST INFORMATION ABOUT LEX/OS SOON.");
+      EmailForm.setResponseMessage("duplicate", "DUPLICATE ENTRY!","THE SUBMITTED EMAIL ADDRESS IS ALREADY REGISTERED.");
+      EmailForm.setResponseMessage("error", "ERROR HAS OCCURED!","WE ARE SORRY, BUT AN ERROR HAS OCCURED. PLEASE TRY AGAIN LATER.");
+
+      $(document).ready(function(){
+        $(window).on('beforeunload', function() {
+          $(window).scrollTop(0);
+        });
+
+        var imgLoad = imagesLoaded( '#wrapper', function() {
+          Debug.log("HTML", "images have all loaded..");
+          module.imagesLoaded = true;
+          if(module.minTimePassed){
+            module.init();
+          }
+        });
+        imgLoad.on( 'progress', function( instance, image ) {
+          var result = image.isLoaded ? 'loaded' : 'broken';
+          Debug.log("HTML",  'image is ' + result + ' for ' + image.img.src  + ', id: ' + image);
+        });
+      });
+      module.init = function(){
+        $('#wrapper').fadeIn("slow");
+        $('#page-preloader').fadeOut("fast", function(){
+          Animator.stopAnimation('Preloader');
+        });
+        Site.setYoutubeId('FwasDsRayVE');
+        Site.init();
+      }
+    </script>
+    <!-- START US GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55117814-51', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- END US GOOGLE ANALYTICS -->
+
+    <!-- WB DMP Tag-->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PDNSXD"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PDNSXD');</script>
+    <!-- WB DMP Tag-->
+
+    <!-- START  LEXCORP SITE US OMNITURE -->
+    <!-- SiteCatalyst code version: H.15.1.
+    Copyright 1997-2008 Omniture, Inc.
+    More info available at http://www.omniture.com -->
+    <script language="JavaScript" type="text/javascript" src="http://www.warnerbros.com/all/us/omniture/s_code_theatrical.js"></script>
+    <script language="JavaScript" type="text/javascript">
+      s.pageName="LexCorp"
+      s.channel=""
+      s.prop1="LexCorp.us"
+      s.prop2=""
+      s.prop3="LexCorp Index"
+      s.prop4=""
+      s.prop5=""
+      s.prop6=""
+      s.prop7=""
+      s.prop8=""
+      s.events=""
+      s.products=""
+      s.eVar1=""
+      s.eVar2=""
+      s.eVar3=""
+      s.eVar4=""
+      s.eVar5=""
+      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+      var s_code=s.t();if(s_code)document.write(s_code)//-->
+      </script>
+      <script language="JavaScript" type="text/javascript">
+        <!--
+        if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+        //-->
+      </script>
+      <noscript>
+        <a href="http://www.omniture.com" title="Web Analytics">
+          <img src="http://wbrostheatricalother.112.2O7.net/b/ss/wbrostheatricalother/1/H.15.1--NS/0?[AQB]&cdp=3&[AQE]" height="1" width="1" border="0" alt="" />
+        </a>
+      </noscript><!--/DO NOT REMOVE/-->
+        <!-- End SiteCatalyst code version: H.15.1. -->
+        <!-- END  LEXCORP SITE US OMNITURE -->
+      </body>
+      </html>

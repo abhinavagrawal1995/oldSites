@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Turn.js Documentation</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.19.1" />
+<meta name="viewport" content="width = 1140" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/docs/opensearch_desc.php" title="Turn.js Documentation (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://turnjs.com/docs/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="Turn.js Documentation Atom feed" href="/docs/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://turnjs.com/docs/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: turnjs-turnjs_:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="http://turnjs.com/docs/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Main_Page","wgTitle":"Main Page","wgCurRevisionId":799,"wgArticleId":1,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Main_Page","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgIsMainPage":true,"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":false,"expandablesearch":false,"footercleanup":false,"sectioneditlinks":false,"simplesearch":true,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: turnjs-turnjs_:resourceloader:filter:minify-js:7:66a938cc0955964f33213004042d63fb */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/docs/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Main_Page skin-vector action-view">
+	<!--
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+	-->
+
+		<!-- header -->
+
+		<div class="viewport">
+			<div class="header">
+				<a class="logo" href="http://www.turnjs.com/"></a>
+
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" class="vectorTabs emptyPortlet">
+	<h5>Views</h5>
+	<ul>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/docs/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search Turn.js Documentation [f]" accesskey="f" id="searchInput" />			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />					<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+
+			</div>
+			<div class="content_body">
+				<div class="navigation">
+					<div class="space">
+					
+
+						<!-- panel -->
+							<div id="mw-panel" class="noprint">
+								
+<!-- GETTTING STARTED -->
+<div class="portal" id='p-GETTTING_STARTED'>
+	<h5>GETTTING STARTED</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/docs/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-Requirements"><a href="/docs/Requirements">Requirements</a></li>
+			<li id="n-Downloading-Turn.js"><a href="/docs/Download">Downloading Turn.js</a></li>
+			<li id="n-How-Turn.js-Works"><a href="/docs/How_Turn.js_Works">How Turn.js Works</a></li>
+			<li id="n-Browser-Support"><a href="/docs/Browser_Support">Browser Support</a></li>
+			<li id="n-Tutorials"><a href="/docs/Tutorials">Tutorials</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /GETTTING STARTED -->
+
+<!-- API REFERENCE -->
+<div class="portal" id='p-API_REFERENCE'>
+	<h5>API REFERENCE</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Constructor"><a href="/docs/Constructor">Constructor</a></li>
+			<li id="n-Options"><a href="/docs/Options">Options</a></li>
+			<li id="n-Properties"><a href="/docs/Properties">Properties</a></li>
+			<li id="n-Methods"><a href="/docs/Methods">Methods</a></li>
+			<li id="n-Destructor"><a href="/docs/Destructor">Destructor</a></li>
+			<li id="n-Events"><a href="/docs/Events">Events</a></li>
+			<li id="n-CSS-Classes"><a href="/docs/CSS_Classes">CSS Classes</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /API REFERENCE -->
+
+<!-- ABOUT TURN.JS -->
+<div class="portal" id='p-ABOUT_TURN.JS'>
+	<h5>ABOUT TURN.JS</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Changelog"><a href="/docs/Changelog">Changelog</a></li>
+			<li id="n-Licensing"><a href="/docs/Licensing">Licensing</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /ABOUT TURN.JS -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+							</div>
+						<!-- /panel -->
+
+
+					</div>
+				</div>
+				<div class="content">
+					<div class="space">
+					
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">
+				<span dir="auto">Main Page</span>
+			</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Turn.js Documentation</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Turn.js is a library that will make your content look like a real book or magazine with just HTML content. It uses HTML5 and CSS3 to perform the effects, reason why it works nicely on touch devices such as iOS devices (iPad, iPhone, iPod) and Android devices. 
+</p><p>Turn.js takes all the advantages of having real HTML content over flash content. Besides the feeling of native content (selectable content, no third-party contextual menus), it's possible to add advertisement codes, HTML5 videos, tooltips, images, maps, forms, keep tracking of every page and combine them with hundreds of clever libraries made for the Web.
+</p>
+<h2> <span class="mw-headline" id="Let.27s_take_a_look_at_how_it_works">Let's take a look at how it works</span></h2>
+<p>1. We create the HTML
+</p>
+<pre class="xml">
+&lt;div id=&quot;flipbook&quot;&gt;
+  &lt;div class=&quot;hard&quot;&gt; Turn.js &lt;/div&gt; 
+  &lt;div class=&quot;hard&quot;&gt;&lt;/div&gt;
+  &lt;div&gt; Page 1 &lt;/div&gt;
+  &lt;div&gt; Page 2 &lt;/div&gt;
+  &lt;div&gt; Page 3 &lt;/div&gt;
+  &lt;div&gt; Page 4 &lt;/div&gt;
+  &lt;div class=&quot;hard&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;hard&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>2. Then the JavaScript part
+</p>
+<pre class="javascript">
+$(&quot;#flipbook&quot;).turn({
+  width: 400,
+  height: 300,
+  autoCenter: true
+});
+</pre>
+<p><a rel="nofollow" target="_blank" class="external text" href="http://jsfiddle.net/blasten/A9a7E">Here's the result on jsFiddle</a>
+</p>
+<h2> <span class="mw-headline" id="Turn.js_4th_release"> Turn.js 4th release</span></h2>
+<p>Turn.js 4th release has over 10 different performance improvements and more than 20 new features.  The improvements were mainly focused on making the effects much more fluent and smoother as well as reducing memory consumption when using the browser's GPU and storing elements in the DOM tree.  It also supports old browsers such as IE8 by adding a new file called turn.html4.js, which has the exact same API (methods, properties) but it deals with the effects in a different way on HTML4-based browsers.
+</p>
+<h2> <span class="mw-headline" id="Flipbook">Flipbook</span></h2>
+<p>Turn is the built-in jQuery plugin that comes with the turn.js development kit, which allows you to create flipbooks. These are the options, properties, methods, events and CSS classes available in turn.js 4.0.9 release.
+</p>
+<dl><dd><table class="simple">
+<tr>
+<th scope="col" style="width: 225px;"> <a href="/docs/Turn_Options" title="Turn Options">Options</a>
+</th>
+<th scope="col" style="width: 225px;">  <a href="/docs/Turn_Properties" title="Turn Properties">Properties</a>
+</th>
+<th scope="col" style="width: 225px;">  <a href="/docs/Turn_Methods" title="Turn Methods">Methods</a>
+</th>
+<th scope="col" style="width: 225px;">  <a href="/docs/Turn_Events" title="Turn Events">Events</a>
+</th>
+<th scope="col" style="width: 225px;">  <a href="/docs/Turn_CSS" title="Turn CSS">CSS Classes</a>
+</th></tr>
+<tr>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Option:_acceleration" title="Option: acceleration">acceleration</a>
+</li><li> <a href="/docs/Option:_autoCenter" title="Option: autoCenter">autoCenter</a>
+</li><li> <a href="/docs/Option:_direction" title="Option: direction">direction</a>
+</li><li> <a href="/docs/Option:_display" title="Option: display">display</a>
+</li><li> <a href="/docs/Option:_duration" title="Option: duration">duration</a>
+</li><li> <a href="/docs/Option:_gradients" title="Option: gradients">gradients</a>
+</li><li> <a href="/docs/Option:_height" title="Option: height">height</a>
+</li><li> <a href="/docs/Option:_elevation" title="Option: elevation">elevation</a>
+</li><li> <a href="/docs/Option:_page" title="Option: page">page</a>
+</li><li> <a href="/docs/Option:_pages" title="Option: pages">pages</a>
+</li><li> <a href="/docs/Option:_turnCorners" title="Option: turnCorners">turnCorners</a>
+</li><li> <a href="/docs/Option:_when" title="Option: when">when</a>
+</li><li> <a href="/docs/Option:_width" title="Option: width">width</a>
+</li></ul>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Property:_animating" title="Property: animating">animating</a>
+</li><li> <a href="/docs/Property:_direction" title="Property: direction">direction</a>
+</li><li> <a href="/docs/Property:_display" title="Property: display">display</a>
+</li><li> <a href="/docs/Property:_disabled" title="Property: disabled">disabled</a>
+</li><li> <a href="/docs/Property:_page" title="Property: page">page</a>
+</li><li> <a href="/docs/Property:_pages" title="Property: pages">pages</a>
+</li><li> <a href="/docs/Property:_size" title="Property: size">size</a>
+</li><li> <a href="/docs/Property:_options" title="Property: options">options</a>
+</li><li> <a href="/docs/Property:_view" title="Property: view">view</a>
+</li><li> <a href="/docs/Property:_zoom" title="Property: zoom">zoom</a>
+</li></ul>
+<p><br />
+</p>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Method:_addPage" title="Method: addPage">addPage</a>
+</li><li> <a href="/docs/Method:_center" title="Method: center">center</a>
+</li><li> <a href="/docs/Method:_destroy" title="Method: destroy">destroy</a>
+</li><li> <a href="/docs/Method:_direction" title="Method: direction">direction</a>
+</li><li> <a href="/docs/Method:_display" title="Method: display">display</a>
+</li><li> <a href="/docs/Method:_disable" title="Method: disable">disable</a>
+</li><li> <a href="/docs/Method:_hasPage" title="Method: hasPage">hasPage</a>
+</li><li> <a href="/docs/Method:_next" title="Method: next">next</a>
+</li><li> <a href="/docs/Method:_is" title="Method: is">is</a>
+</li><li> <a href="/docs/Method:_options" title="Method: options">options</a>
+</li><li> <a href="/docs/Method:_page" title="Method: page">page</a>
+</li><li> <a href="/docs/Method:_pages" title="Method: pages">pages</a>
+</li><li> <a href="/docs/Method:_peel" title="Method: peel">peel</a>
+</li><li> <a href="/docs/Method:_previous" title="Method: previous">previous</a>
+</li><li> <a href="/docs/Method:_range" title="Method: range">range</a>
+</li><li> <a href="/docs/Method:_removePage" title="Method: removePage">removePage</a>
+</li><li> <a href="/docs/Method:_resize" title="Method: resize">resize</a>
+</li><li> <a href="/docs/Method:_size" title="Method: size">size</a>
+</li><li> <a href="/docs/Method:_stop" title="Method: stop">stop</a>
+</li><li> <a href="/docs/Method:_version" title="Method: version">version</a>
+</li><li> <a href="/docs/Method:_zoom" title="Method: zoom">zoom</a>
+</li></ul>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Event:_end" title="Event: end">end</a>
+</li><li> <a href="/docs/Event:_first" title="Event: first">first</a>
+</li><li> <a href="/docs/Event:_last" title="Event: last">last</a>
+</li><li> <a href="/docs/Event:_missing" title="Event: missing">missing</a>
+</li><li> <a href="/docs/Event:_start" title="Event: start">start</a>
+</li><li> <a href="/docs/Event:_turning" title="Event: turning">turning</a>
+</li><li> <a href="/docs/Event:_turned" title="Event: turned">turned</a>
+</li><li> <a href="/docs/Event:_zooming" title="Event: zooming">zooming</a>
+</li></ul>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Class:_.even" title="Class: .even">.even</a>
+</li><li> <a href="/docs/Class:_.fixed" title="Class: .fixed">.fixed</a>
+</li><li> <a href="/docs/Class:_.hard" title="Class: .hard">.hard</a>
+</li><li> <a href="/docs/Class:_.odd" title="Class: .odd">.odd</a>
+</li><li> <a href="/docs/Class:_.own-size" title="Class: .own-size">.own-size</a>
+</li><li> <a href="/docs/Class:_.page" title="Class: .page">.page</a>
+</li><li> <a href="/docs/Class:_.p" title="Class: .p">.p[0-9]+</a>
+</li><li> <a href="/docs/Class:_.shadow" title="Class: .shadow">.shadow</a>
+</li><li> <a href="/docs/Class:_.sheet" title="Class: .sheet">.sheet</a>
+</li></ul>
+</td></tr></table></dd></dl>
+<h2> <span class="mw-headline" id="Zoom_Viewport">Zoom Viewport</span></h2>
+<p>To implement the new zoom function, a new component is available since turn.js 4.0.2 to define the viewport of the pages when zoomed in. There's an article about <a href="/docs/How_to_add_zoom_to_turn.js" title="How to add zoom to turn.js">how to add zoom to turn.js</a>.
+</p>
+<dl><dd><table class="simple" style="width: 600px;">
+<tr>
+<th scope="col" style="width: 225px;"> <a href="/docs/Zoom_Options" title="Zoom Options"> Options</a>
+</th>
+<th scope="col" style="width: 225px;"> <a href="/docs/Zoom_Properties" title="Zoom Properties"> Properties</a>
+</th>
+<th scope="col" style="width: 225px;">  <a href="/docs/Zoom_Methods" title="Zoom Methods"> Methods</a>
+</th>
+<th scope="col" style="width: 225px;"> <a href="/docs/Zoom_Events" title="Zoom Events"> Events</a>
+</th></tr>
+<tr>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Option:_easeFunction" title="Option: easeFunction">easeFunction</a>
+</li><li> <a href="/docs/Zoom_Option:_duration" title="Zoom Option: duration">duration</a>
+</li><li> <a href="/docs/Option:_max" title="Option: max">max</a>
+</li><li> <a href="/docs/Option:_flipbook" title="Option: flipbook">flipbook</a>
+</li><li> <a href="/docs/Zoom_Option:_when" title="Zoom Option: when">when</a>
+</li></ul>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Property:_value" title="Property: value">value</a>
+</li></ul>
+<p><br />
+</p>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Method:_zoomIn" title="Method: zoomIn">zoomIn</a>
+</li><li> <a href="/docs/Method:_zoomOut" title="Method: zoomOut">zoomOut</a>
+</li></ul>
+<p><br />
+</p>
+</td>
+<td style="vertical-align: top;">
+<ul><li> <a href="/docs/Event:_change" title="Event: change">change</a>
+</li><li> <a href="/docs/Event:_doubleTap" title="Event: doubleTap">doubleTap</a>
+</li><li> <a href="/docs/Event:_resize" title="Event: resize">resize</a>
+</li><li> <a href="/docs/Event:_swipeLeft" title="Event: swipeLeft">swipeLeft</a>
+</li><li> <a href="/docs/Event:_swipeRight" title="Event: swipeRight">swipeRight</a>
+</li><li> <a href="/docs/Event:_tap" title="Event: tap">tap</a>
+</li><li> <a href="/docs/Event:_zoomIn" title="Event: zoomIn">zoomIn</a>
+</li><li> <a href="/docs/Event:_zoomOut" title="Event: zoomOut">zoomOut</a>
+</li></ul>
+</td></tr></table></dd></dl>
+<h2> <span class="mw-headline" id="Scissors">Scissors</span></h2>
+<p>Scissors is literally a scissor that cuts a page in two parts, so that you can have double pages made entirely in HTML5  and split them into two pages.
+</p><p><a href="/docs/Scissor" title="Scissor">Read more about Scissor</a>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 37/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key turnjs-turnjs_:pcache:idhash:1-0!*!0!!*!*!* and timestamp 20160226140108 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://turnjs.com/docs/index.php?title=Main_Page&amp;oldid=799">http://turnjs.com/docs/index.php?title=Main_Page&amp;oldid=799</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks catlinks-allhidden'></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="footer">
+				
+<!-- 0 -->
+
+<ul>
+		<li id="pt-login"><a href="/docs/index.php?title=Special:UserLogin&amp;returnto=Main+Page" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+</ul>
+
+
+<!-- /0 -->
+				&copy;2012 All rights reserved
+			</div>
+		</div>
+
+		
+
+<script type="text/javascript" src="http://www.turnjs.com/extras/highlight.min.js"></script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-28960832-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	
+	
+<script src="http://turnjs.com/docs/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","ext.vector.simpleSearch"], null, true);
+}</script>
+<!-- Served in 0.163 secs. -->
+	</body>
+</html>

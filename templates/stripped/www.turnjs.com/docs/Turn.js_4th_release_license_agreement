@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Turn.js 4th release license agreement - Turn.js Documentation</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.19.1" />
+<meta name="viewport" content="width = 1140" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/docs/opensearch_desc.php" title="Turn.js Documentation (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://turnjs.com/docs/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="Turn.js Documentation Atom feed" href="/docs/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://turnjs.com/docs/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: turnjs-turnjs_:resourceloader:filter:minify-css:7:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+
+<script src="http://turnjs.com/docs/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Turn.js_4th_release_license_agreement","wgTitle":"Turn.js 4th release license agreement","wgCurRevisionId":761,"wgArticleId":106,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Turn.js_4th_release_license_agreement","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":false,"expandablesearch":false,"footercleanup":false,"sectioneditlinks":false,"simplesearch":true,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+
+/* cache key: turnjs-turnjs_:resourceloader:filter:minify-js:7:66a938cc0955964f33213004042d63fb */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/docs/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Turn_js_4th_release_license_agreement skin-vector action-view">
+	<!--
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+	-->
+
+		<!-- header -->
+
+		<div class="viewport">
+			<div class="header">
+				<a class="logo" href="http://www.turnjs.com/"></a>
+
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" class="vectorTabs emptyPortlet">
+	<h5>Views</h5>
+	<ul>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/docs/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search Turn.js Documentation [f]" accesskey="f" id="searchInput" />			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />					<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+
+			</div>
+			<div class="content_body">
+				<div class="navigation">
+					<div class="space">
+					
+
+						<!-- panel -->
+							<div id="mw-panel" class="noprint">
+								
+<!-- GETTTING STARTED -->
+<div class="portal" id='p-GETTTING_STARTED'>
+	<h5>GETTTING STARTED</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/docs/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-Requirements"><a href="/docs/Requirements">Requirements</a></li>
+			<li id="n-Downloading-Turn.js"><a href="/docs/Download">Downloading Turn.js</a></li>
+			<li id="n-How-Turn.js-Works"><a href="/docs/How_Turn.js_Works">How Turn.js Works</a></li>
+			<li id="n-Browser-Support"><a href="/docs/Browser_Support">Browser Support</a></li>
+			<li id="n-Tutorials"><a href="/docs/Tutorials">Tutorials</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /GETTTING STARTED -->
+
+<!-- API REFERENCE -->
+<div class="portal" id='p-API_REFERENCE'>
+	<h5>API REFERENCE</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Constructor"><a href="/docs/Constructor">Constructor</a></li>
+			<li id="n-Options"><a href="/docs/Options">Options</a></li>
+			<li id="n-Properties"><a href="/docs/Properties">Properties</a></li>
+			<li id="n-Methods"><a href="/docs/Methods">Methods</a></li>
+			<li id="n-Destructor"><a href="/docs/Destructor">Destructor</a></li>
+			<li id="n-Events"><a href="/docs/Events">Events</a></li>
+			<li id="n-CSS-Classes"><a href="/docs/CSS_Classes">CSS Classes</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /API REFERENCE -->
+
+<!-- ABOUT TURN.JS -->
+<div class="portal" id='p-ABOUT_TURN.JS'>
+	<h5>ABOUT TURN.JS</h5>
+	<div class="body">
+		<ul>
+			<li id="n-Changelog"><a href="/docs/Changelog">Changelog</a></li>
+			<li id="n-Licensing"><a href="/docs/Licensing">Licensing</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /ABOUT TURN.JS -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+							</div>
+						<!-- /panel -->
+
+
+					</div>
+				</div>
+				<div class="content">
+					<div class="space">
+					
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">
+				<span dir="auto">Turn.js 4th release license agreement</span>
+			</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Turn.js Documentation</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><h2> <span class="mw-headline" id="TURN.JS_COMMERCIAL_LICENSE_AGREEMENT">TURN.JS COMMERCIAL LICENSE AGREEMENT</span></h2>
+<p>By checking "I Agree" during the online purchase, or by using the Software, you represent that you have read, understand and agree to be bound by the terms and conditions of this <b>Turn.js Commercial License Agreement</b>. If you do not accept these terms and conditions then you are not granted a license and are not authorized to access, download, modify or use the Software.
+</p>
+<h3> <span class="mw-headline" id="TERMS_.26_CONDITIONS">TERMS &amp; CONDITIONS</span></h3>
+<p><b>1. DEFINITIONS</b>
+</p><p><i>“Agreement”</i> or <i>“license”</i> - means all of the terms and conditions of this document.
+</p><p><i>“Licensor”</i> - means Emmanuel Garcia, creator of the Software.
+</p><p><i>“Licensee”</i> or <i>“you”</i> - means the associated organization or the individual who or entity that accepted and agreed to be bound by the terms and conditions of this Agreement.
+</p><p><i>“Customer”</i> - means the entity or organization that Licensee delivers products to or delivers technology demonstrations as sponsored by such entity.
+</p><p><i>“Software”</i> - means Turn.js fourth release and all of the code, documentation, and copyrighted material within.
+</p><p><i>“Developer(s)”</i> - means the individual(s) associated with the Licensee and on whose behalf the Licensee has accepted to be bound to this Agreement for which the Software may be downloaded, modified, used, referenced or developed with.
+</p><p><i>“Product(s)”</i> - means software or other technical system that incorporates the Turn.js fourth release package as part of its operation, which is made by the Licensee and intended for but not limited to internal use, demonstration, sale or distribution.
+</p><p><i>“Updates”</i> - means any downloaded, used, or referenced code changes, modifications, bug fixes, or improvements offered, communicated or delivered by the Licensor to the Licensee during the duration of this Agreement.
+</p><p><i>“Domains”</i> – means the domain name or subdomain in which the Software is accessible to Customers.
+</p><p><i>“ULID”</i> – means Unique License ID, which is an ID of six characters sent by the Licensor to the Licensee.
+</p><p><b>2. SCOPE OF THE LICENSE</b>
+</p><p>2.1 Subject to the terms and conditions of this Agreement, Licensor hereby grants to Licensee a limited and non-exclusive right during the term of this Agreement and any renewals hereof to: (a) download the Software from the Turn.js Website; (b) install the Software on any domain for public or private access; (c) include copies of the Software as part of Products, and (c) support distributed versions of the Software that is part of
+Licensee Products. This license is subject to the additional conditions stated in this Agreement. Any agreement between the Licensee, on the one hand, and a Distributor, on the other, shall not grant to such Distributor license rights broader in scope than the license rights granted to Licensee under this Section 2.1, and shall include terms substantially similar to Section 2.2.
+</p><p>2.2 In connection with the Products, Licensee shall not: (a) lease, license, use, make available or distribute all or any part of the Software to any third party, except as included in the Product; (b) lease, license, use, make available or distribute the Software as a stand alone application or with applications other than a Product under this license; or (c) distribute Software pursuant to a public or open source license.
+</p><p>2.3 Licensee agrees to (a) require each Distributor of a Product to agree to protect the Software under substantially similar terms and conditions as Licensee is hereby agreeing; and (b) enforce its agreements with Distributors in response to breaches of Distributors' obligations under such agreements with respect to the protection of Software as set forth above. In the event Licensee learns that a Distributor has failed to take steps required under subpart (a) above, or Licensee has taken enforcement steps in accordance with subpart (b) above, Licensee shall promptly inform Licensor.
+</p><p><b>3. Authorized Development Activities</b>
+</p><p>The Software is licensed only for the specific development activities below.
+</p><p>3.1 Licensee is permitted to use Software on the permitted number of Domains for the purpose of software development, use and referencing. If use of the Domains is to be shared with other individuals, they are not permitted to use the Software unless Licensee has purchased a copy of this development license (or an equivalent development license) from the Licensor for those individuals separately.
+</p><p>3.2 The Developer may use the Software on unlimited Domains providing the ULID have been inserted at the beginning of the Source Code.
+</p><p>3.3 The Developer may modify the Software source code by making changes, additions or removing from the Software in any form. Any changes made to the Software source code are the property of Licensee. However making changes to the Software does not give the Licensee the right to distribute the derivative work as new software unbound by this license. Any and all source code of the License Software as originally supplied by the Licensor remains subject to the terms of this Agreement.
+</p><p><b>4. Prohibited Activities</b>
+</p><p>The Licensee shall not perform nor authorize others to perform any of the activities given in the following sections below.
+</p><p>4.1 The Licensee shall not allow multiple developers to share the license rights entitled to the Developer(s) for whom this license has been purchased and this Agreement made. This includes but is not limited to sharing Software Updates with other developers that
+have a Software developers license but for whom the required Update and Support fees have not been paid for.
+</p><p>4.2 The Licensee may not pursue any formal qualification, certification, or designation for the Software unless it is for a specific end user system for which it is part or unless the Licensor has provided written consent for such activity.
+</p><p><b>5. Intellectual Property Rights</b> 
+</p><p>The Software is licensed, not sold. The Licensor retains all right, title and interest in and to the Software and all copies thereof and in all related copyrights, trade secrets, trademarks and any other intellectual property rights embodied therein or used in association with the Software.
+</p><p><b>6. Price and Payment</b>
+</p><p>6.1 The Licensee shall pay all fees, charges and applicable taxes.
+</p><p>6.2 Failure to pay any of the fees or charges will result in immediate termination of this license and the immediate termination of any and all rights this licence Agreement affirms to the Licensee. Any and all copies of the Software downloaded by the Licensee or Developer must immediately be removed from any Machines for which a valid developer license does not exist as defined under section 3 of this Agreement.
+</p><p><b>7. Disclaimer of Warranties and Limitation of Liability</b>
+</p><p>THE SOFTWARE IS PROVIDED BY THE LICENSOR "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE LICENSOR DOES NOT WARRANT THAT THE LICENSED SOFTWARE WILL MEET LICENSEE'S REQUIREMENTS OR THAT THE OPERATION OF THE LICENSED SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT ERRORS IN THE LICENSED SOFTWARE WILL BE CORRECTED. THIS SECTION 8 OF THIS AGREEMENT WILL SURVIVE ITS EXPIRATION OR TERMINATION AND WILL APPLY NOTWITHSTANDING THE FAILURE OF THE ESSENTIAL PURPOSE OF ANY OF ITS TERMS AND CONDITIONS.
+</p><p>Without limiting the generality or terms of the foregoing disclaimer, the Licensee acknowledges that the Software is not specifically designed, manufactured or intended for use in the planning, construction, maintenance, control or direct operation of any high-risk systems including but not limited to nuclear facilities, aircraft navigation, flight control or flight communication, mass transit, weapons or direct life support systems.
+</p><p><b>8. United States Government Rights</b>
+</p><p>If the Licensee is a U.S. government or quasi- government entity, then the Licensee acknowledges that the Software is a "commercial item", as that term is defined in 48 C.F.R. 2.101 (Oct. 1995), consisting of "commercial computer software" and "commercial computer software documentation", as such terms are used in 48 C.F.R. 12.1212 (Sept. 1995). Consistent with 48 C.F.R. 12.1212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995), all such customers acquire the Software with only those rights set forth herein. Use, duplication, or disclosure by the U.S. government is subject to restrictions as provided in DFARS 227.7202-1(a) and 227.7202-3(a) (1995), DFARS 252.227-7013 (c)(1)(ii) (OCT 1988), FAR 12.212(a)(1995), FAR 52.227-19, or FAR 52.227-14 (ALT III), as applicable.
+</p><p><b>9. Ownership of Feedback Information</b>
+</p><p>For all communication between the Licensor and Licensee, which may include but is not limited to email, voice, or website forum discussion, the property rights to information regarding the Software shall adhere to the terms given in this section below.
+</p><p>9.1 The Licensor shall have the right to own, sell and distribute any changes made to the Software as a result of communications from the Licensee including but not limited to recommendations, complaints, bug-fixes or feature requests.
+</p><p>9.2 The Licensor shall have the right to own, sell and distribute any modifications, improvements of other changes to the Software made by Licensee that are transferred or directly communicated to the Licensor.
+</p><p><b>10. Support</b>
+</p><p>The terms of support shall be made available to the Licensee for a period of six months from the date of the online purchase.
+</p><p>10.1 Updates: The during the period of support the Licensee is entitled to any updates, modifications or bug fixes that are made available in that period. These modifications will be made available for online download to the Licensee and the Licensee will be notified of such modifications when they are available through email contact to the Developer(s).
+</p><p>10.2 Direct Support and Limitations: The Licensee is entitled to a limited amount of direct support for any questions, issues or other informational requirements that need to be addressed with respect to the Software during the period of support. The direct support will be made available to the Licensee via email or telephone communication.
+</p><p>10.3 Renewal of support: During the one year duration of support, the Licensee will have the opportunity to purchase a renewal of support. The price of renewal will be determined at the time of purchase. The Licensor has the right to modify the terms of support offered in the renewal and therefore the renewed terms may not be the same terms offered in this Agreement.
+</p><p><b>11. Governing Law</b>
+</p><p>11.1 This Agreement shall be governed by the laws of the State of Ohio, United States, without regard to the conflict of laws provision thereof. Under no condition or event shall the United Nations Convention on Contracts for the International Sale of Goods nor any adopted version of the Uniform Computer Information Transactions Act apply to, or govern, this Agreement. In the event that either Licensor or Licensee initiates an action in regards to this Agreement or other dispute between the Licensor and Licensee, the exclusive location and jurisdiction of such action shall be in the state and courts of Ohio.
+</p><p>11.2 The Licensee shall comply at its own expense the applicable laws related to the terms and conditions of this Agreement, and the use of the Software.
+</p><p><b>12. Entire Agreement</b>
+</p><p>This Agreement is the entire agreement between the Licensee and the Licensor with respect to the Software and its support and they supersede all prior oral or written communications, advising, proposals or representations with respect to the Software or any other terms or conditions of this Agreement. If any terms or conditions of this Agreement are found to be void, invalid, unenforceable or illegal, the other terms or conditions of this Agreement shall continue to apply to the Software.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 6/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key turnjs-turnjs_:pcache:idhash:106-0!*!*!!*!*!* and timestamp 20160226140300 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://turnjs.com/docs/index.php?title=Turn.js_4th_release_license_agreement&amp;oldid=761">http://turnjs.com/docs/index.php?title=Turn.js_4th_release_license_agreement&amp;oldid=761</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks catlinks-allhidden'></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="footer">
+				
+<!-- 0 -->
+
+<ul>
+		<li id="pt-anonlogin"><a href="/docs/index.php?title=Special:UserLogin&amp;returnto=Turn.js+4th+release+license+agreement" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+</ul>
+
+
+<!-- /0 -->
+				&copy;2012 All rights reserved
+			</div>
+		</div>
+
+		
+
+<script type="text/javascript" src="http://www.turnjs.com/extras/highlight.min.js"></script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-28960832-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>	
+	
+<script src="http://turnjs.com/docs/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","ext.vector.simpleSearch"], null, true);
+}</script>
+<!-- Served in 0.085 secs. -->
+	</body>
+</html>
